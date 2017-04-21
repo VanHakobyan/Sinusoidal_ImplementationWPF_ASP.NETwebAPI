@@ -4,21 +4,26 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-
+using GraphPlot.Models;
 namespace GraphPlot.Controllers
 {
     public class PlotController : ApiController
     {
+
+        private GraphsCreator CreateGraph;
         // GET: api/Plot
-        public IEnumerable<string> Get()
+        public IHttpActionResult Get()
         {
-            return new string[] { "value1", "value2" };
+            CreateGraph = new GraphsCreator();
+            List<Point> XYList = new List<Point>();
+            XYList = CreateGraph.GetXY();
+            return Ok(XYList);
         }
 
-        // PUT: api/Plot/5
-        public void Put(int id, [FromBody]string value)
-        {
-        }
+        //public IHttpActionResult Post([FromUri]string function, [FromBody] string param)
+        //{
+           
+        //}
 
     }   
 }
