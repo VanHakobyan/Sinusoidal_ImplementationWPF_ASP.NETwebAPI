@@ -1,5 +1,5 @@
 <p align="center"><img src="http://aparanblog.do.am/fixed.png"></p></br><br>
-``` C#
+```C#
 private Point CorrespondingPoint(Point pt)
 {
     double xmin = 0;
@@ -40,6 +40,9 @@ private void Draw_Graph_Click(object sender, RoutedEventArgs e)
 
     );
 }
+
+
 ```
-</br>
+
+
 <h4>Author <a href="https://github.com/tigranv">Tigran Vardanyan</a><h4>
