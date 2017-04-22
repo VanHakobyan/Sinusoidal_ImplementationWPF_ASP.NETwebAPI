@@ -41,4 +41,4 @@ private void Draw_Graph_Click(object sender, RoutedEventArgs e)
     );
 }
 
-<h4>Author [Tigran Vardanyan](https://github.com/tigranv)<h4>
+<h4>Author <a href="https://github.com/tigranv">Tigran Vardanyan</a><h4>
